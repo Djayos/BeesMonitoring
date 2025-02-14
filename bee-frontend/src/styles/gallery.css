@@ -1,0 +1,205 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1A1A1A !important;
+  color: #FFD700;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Conteneur principal */
+.gallery-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative; /* Assure que tout reste bien en place */
+}
+
+/* Conteneur scrollable pour les images */
+.gallery-wrapper {
+  width: 90vw;
+  max-width: 1400px;
+  height: 60vh; /* Définit la hauteur pour éviter que la galerie prenne toute la page */
+  overflow-y: auto; /* Active le défilement vertical */
+  overflow-x: hidden; /* Cache la barre de défilement horizontale */
+  border: 2px solid #FFD700;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Galerie des images */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%; /* Assure que la galerie ne déborde pas */
+  padding: 10px;
+}
+
+/* Style des cartes d'image */
+.image-card {
+  border: 2px solid #FFD700;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+.image-card:hover {
+  transform: scale(1.05);
+}
+
+/* Ajustement des images */
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 180px;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Section Analyse en dessous de la galerie */
+.analysis-section {
+  width: 90vw;
+  max-width: 1400px;
+  background-color: #222; /* Un fond légèrement différent pour la distinguer */
+  color: #FFD700;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3);
+}
+
+.analysis-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.analysis-section p {
+  font-size: 16px;
+}
+
+/* Groupes d'analyses */
+.analysis-group {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.analysis-group h2 {
+  color: #FFD700;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.analysis-section {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.analysis-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffcc00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.analysis-list {
+  list-style: none; /* ✅ Supprime les points de la liste */
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 600px; /* ✅ Ajuste la largeur max */
+}
+
+.analysis-list li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc00;
+  min-width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+/* ===== MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.modal-image {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Bouton de fermeture en haut à droite */
+.close-button {
+  position: absolute;
+  padding: 0.15em 0.3em;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #FFD700;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+}

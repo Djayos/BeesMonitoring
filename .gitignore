@@ -1,0 +1,8 @@
+node_modules/
+.venv_monitoring/
+__pycache__/
+*.ppk
+*.key
+id_rsa
+*.zip
+.env
