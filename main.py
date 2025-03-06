@@ -21,7 +21,7 @@ app.add_middleware(
 # Informations de connexion au serveur Oracle
 SSH_HOST = "89.168.38.245"
 SSH_USER = "ubuntu"
-SSH_KEY_PATH = "C:/Users/josep/Desktop/ÉFREI/M2/Bees Monitoring/id_rsa"
+SSH_KEY_PATH = "C:/Users/josep/Desktop/M2/bees_2/BeesMonitoring/id_rsa"
 REMOTE_IMAGE_DIR = "/home/ubuntu/Bee_pictures/processed"
 
 def list_remote_files():

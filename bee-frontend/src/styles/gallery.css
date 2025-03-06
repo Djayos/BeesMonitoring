@@ -203,3 +203,170 @@ html, body {
 .close-button:hover {
   transform: scale(1.2);
 }
+
+
+/* Dropdown pour la sélection de l'analyse */
+.analysis-dropdown {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #FFD700;
+  background-color: #222;
+  color: #FFD700;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.analysis-dropdown:hover {
+  background-color: #333;
+}
+
+.analysis-dropdown option {
+  background-color: #222;
+  color: #FFD700;
+}
+
+
+
+
+
+
+
+/* Style du conteneur du dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Bouton principal du dropdown */
+.dropdown-button {
+  background-color: #222;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 250px;
+  text-align: center;
+}
+
+.dropdown-button:hover {
+  background-color: #333;
+}
+
+/* Contenu du dropdown */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #222;
+  border: 2px solid #FFD700;
+  border-radius: 5px;
+  width: 250px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Style des éléments à l'intérieur du dropdown */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #FFD700;
+  cursor: pointer;
+}
+
+.dropdown-item input {
+  margin-right: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Style du conteneur du dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Bouton principal du dropdown */
+.dropdown-button {
+  background-color: #222;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 250px;
+  text-align: center;
+}
+
+.dropdown-button:hover {
+  background-color: #333;
+}
+
+/* Contenu du dropdown */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #222;
+  border: 2px solid #FFD700;
+  border-radius: 5px;
+  width: 250px;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Style des éléments à l'intérieur du dropdown */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #FFD700;
+  cursor: pointer;
+}
+
+.dropdown-item input {
+  margin-right: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: #333;
+}
+
+/* Boutons Tout sélectionner / Tout désélectionner */
+.dropdown-action {
+  background-color: #333;
+  color: #FFD700;
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid#FFD700;
+  ;
+}
+

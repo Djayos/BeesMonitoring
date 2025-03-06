@@ -1,5 +1,6 @@
 node_modules/
 .venv_monitoring/
+.venv_bees/
 __pycache__/
 *.ppk
 *.key
